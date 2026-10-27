@@ -10,7 +10,9 @@ public class FormatDates {
         System.out.println("Today is:  " + today);
     //print as MM/DD/YYYY
     //        String .format
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/DD/YYYY");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+        String formattedDate = today.format(formatter);
+        System.out.println("formattedDate = " + formattedDate);
     //print as YYYY-MM-DD
 
     //print as Wednesday, April 22, 2026
