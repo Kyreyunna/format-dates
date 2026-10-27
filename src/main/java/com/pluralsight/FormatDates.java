@@ -1,6 +1,7 @@
 package com.pluralsight;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class FormatDates {
     public static void main(String[] args) {
@@ -9,8 +10,7 @@ public class FormatDates {
         System.out.println("Today is:  " + today);
     //print as MM/DD/YYYY
     //        String .format
-        LocalDateTime monthDayYear = LocalDateTime.now();
-        System.out.println("E, MM, dd, yyyy " + today);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/DD/YYYY");
     //print as YYYY-MM-DD
 
     //print as Wednesday, April 22, 2026
