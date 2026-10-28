@@ -18,8 +18,8 @@ public class FormatDates {
         String formattedDate2 = today.format(formatter2);
         System.out.println("2nd formattedDate = " + formattedDate2);
     //print as Wednesday, April 22, 2026
-        DateTimeFormatter formatter3 = DateTimeFormatter.ofPattern("MM/dd/yyyy");
-        String formattedDate3 = today.format(formatter);
+        DateTimeFormatter formatter3 = DateTimeFormatter.ofPattern("EEEE, MMMM dd, yyyy");
+        String formattedDate3 = today.format(formatter3);
         System.out.println("3rd formattedDate = " + formattedDate3);
     //note: 3 M shorthand 4 M longhand(APR vs April)
 
