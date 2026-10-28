@@ -24,7 +24,7 @@ public class FormatDates {
     //note: 3 M shorthand 4 M longhand(APR vs April)
         DateTimeFormatter formatter4 = DateTimeFormatter.ofPattern("E, MMM dd, yyyy");
         String formattedDate4 = today.format(formatter4);
-        System.out.println("3rd formattedDate = " + formattedDate4);
+        System.out.println("4th formattedDate = " + formattedDate4);
 
     }
 }
